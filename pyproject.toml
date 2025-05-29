@@ -1,10 +1,11 @@
 [project]
-name = "count-reddot"
+name = "dot-counter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Counting dot in cell images."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "click>=8.2.1",
     "imagecodecs>=2024.9.22",
     "ipykernel>=6.29.5",
     "matplotlib>=3.9.3",
@@ -16,7 +17,11 @@ dependencies = [
     "tifffile>=2024.9.20",
 ]
 
-[dependency-groups]
-dev = [
-    "uv>=0.5.5",
-]
+
+[project.scripts]
+dot-counter = "dot_counter.count:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
