@@ -15,7 +15,7 @@
 
 ## 요구사항
 
-```toml
+```
 opencv-python>=4.5.0
 numpy>=1.20.0
 pandas>=1.3.0
