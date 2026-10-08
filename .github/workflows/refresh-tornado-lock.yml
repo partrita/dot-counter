@@ -1,7 +1,9 @@
 name: Refresh Tornado lockfile
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - security/tornado-2026-10
 
 jobs:
   lock:
